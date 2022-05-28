@@ -1,0 +1,44 @@
+.menu
+    &__items
+        display: flex
+        list-style-type: none
+        column-gap: 28px
+        padding: 0
+        margin: 0
+    &__item
+        font-size: 15px
+        font-weight: 400
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            right: -15px
+            top: 0
+            width: 1px
+            height: 23px
+            background-color: #fff
+            opacity: 0.4
+        &:last-child
+            &::after
+                display: none
+    &__link
+        text-decoration: none
+        color: #ffffff
+        position: relative
+        &:hover
+            transition: 0.3s all
+            color: $main_color
+            &::after
+                content: ''
+                position: absolute
+                right: 0
+                bottom: -5px
+                width: 100%
+                height: 1px
+                background-color: #ec644b
+    &__close
+        display: none
+        width: 29 
+        height: 30
+                
+            
