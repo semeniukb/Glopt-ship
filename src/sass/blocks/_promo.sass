@@ -2,5 +2,81 @@
     min-height: 100vh
     position: relative
     background: url('../img/bg/bg_first.jpg') center (center/cover) no-repeat
-   
+    &__title
+        margin-top: 10px
+        color: #ffffff
+        font-size: 24px
+        font-weight: 300
+        text-align: center
+    &__header
+        margin-top: 25px
+        color: $main_color
+        font-size: 72px
+        font-weight: 700
+        text-align: center
+        text-transform: uppercase 
+        margin-bottom: 0
+    &__subtitle
+        margin-top: 7px
+        color: #ffffff
+        font-size: 42px
+        font-weight: 400
+        text-align: center
+        text-transform: uppercase    
+    &__elements
+        position: relative
+        width: 10px
+        height: 10px
+        border-radius: 100%
+        background-color: #fff  
+        margin: 40px auto 0 auto
+        &::before
+            content: ''
+            position: absolute
+            width: 450px
+            height: 1px
+            background-color: #fff
+            top: 5px
+            transform: translateY(-50%)
+            left: 22px
+        &::after
+            content: ''
+            position: absolute
+            width: 450px
+            height: 1px
+            background-color: #fff
+            top: 5px
+            transform: translateY(-50%)
+            right: 22px
+    &__blocks
+        margin-top: 27px
+        display: flex
+        justify-content: center
+        align-items: center
+        column-gap: 35px
+    &__block
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        row-gap: 16px
+    &__img
+        display: flex
+        align-items: start
+        height: 63px
+        img
+            width: 100%
+    &__descr
+        width: 260px
+        color: #ffffff
+        font-size: 16px
+        font-weight: 300
+        line-height: 22px
+        text-align: center
+    &__btn
+        display: block
+        margin: 40px auto 0 auto    
+        font-size: 15px
+        font-weight: 700
+    
         
