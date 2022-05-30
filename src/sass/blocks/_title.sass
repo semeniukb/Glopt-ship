@@ -1,0 +1,18 @@
+.title
+    color: #2e2e2e
+    font-size: 26px
+    font-weight: 700
+    line-height: 23px
+    text-align: center
+    text-transform: uppercase
+    position: relative
+    &_line
+        &::after
+            content: ''
+            position: absolute
+            background-color: $main_color
+            width: 148px
+            height: 1px
+            bottom: -20px
+            left: 50%
+            transform: translateX(-50%)
