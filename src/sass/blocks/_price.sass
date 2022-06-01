@@ -11,6 +11,8 @@
         flex-wrap: wrap
         column-gap: 25px
     &__item
+        display: flex
+        flex-direction: column
         position: relative
         padding: 2px
         width: 265px
@@ -27,6 +29,9 @@
         text-transform: uppercase
     &__body
         padding: 15px 15px 25px 15px
+        display: flex
+        flex-direction: column
+        flex: 1 1 auto
     &__img
         display: block
         margin: 0 auto
@@ -48,7 +53,7 @@
         font-size: 14px
         font-weight: 300
         line-height: 20px
-        text-align: center
+        text-align: center  
     &__btn
         display: block
-        margin: 25px auto 0 auto
+        margin: 0 auto 25px auto
