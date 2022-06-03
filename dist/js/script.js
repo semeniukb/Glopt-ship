@@ -14,4 +14,41 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('menu_active');
         })
     });
-})
+});
+
+// let slider = tns({
+//     container: '.carousel_slider',
+//     items: 2,
+//     autoplay: false,
+//     loop: true,
+//     gutter: 45,
+//     mouseDrag: true,
+//     fixedWidth: 400,
+//     center: true,
+//     animateIn: 'class'
+//   });
+$('.carousel_slider').slick({
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
