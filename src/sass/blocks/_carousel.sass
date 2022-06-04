@@ -1,5 +1,5 @@
 .carousel
-    padding: 55px 0
+    padding: 55px 10px
     &__subtitle
         margin-top: 38px
         padding: 0 225px
@@ -8,16 +8,17 @@
         font-weight: 300
         line-height: 24px
     &_slider
+        position: relative
         margin-top: 30px
         &>div
             margin: 0 auto
-        img
-            display: block
-            margin: 0 auto
-            width: 114px
-            height: 114px
-            border-radius: 100%
-            object-fit: cover
+    &__img
+        display: block
+        margin: 0 auto
+        width: 114px
+        height: 114px
+        border-radius: 100%
+        object-fit: cover
     &__text
         margin-top: 20px
     &__head
@@ -25,17 +26,75 @@
         font-weight: 700
         text-align: center
     &__descr
+        margin-top: 5px
         font-size: 14px
         font-weight: 300
         line-height: 22.01px
-        text-align: justify
+        text-align: center
         
 .slick-slider .slick-track .slick-slide
-    width: 400px
     opacity: 0.2
     transform: scale(0.7)
 .slick-slider .slick-track .slick-current
-    width: 450px
     opacity: 1
     transform: scale(1.0)
     transition: 1.5s all
+.slick-dots
+    position: absolute
+    bottom: -40px
+    display: block
+    width: 100%
+    padding: 0
+    margin: 0
+    list-style: none
+    text-align: center
+    li
+        position: relative
+        display: inline-block
+        width: 20px
+        height: 20px
+        margin: 0 5px
+        padding: 0
+        cursor: pointer
+        button
+            font-size: 0
+            line-height: 0
+            display: block
+            width: 20px
+            height: 20px
+            padding: 5px
+            cursor: pointer
+            color: transparent
+            border: 0
+            outline: none
+            background: transparent
+            &::before
+                font-family: 'slick'
+                font-size: 36px
+                line-height: 20px
+                position: absolute
+                top: 0
+                left: 0
+                width: 20px
+                height: 20px
+                content: '•'
+                text-align: center
+                opacity: .25
+                color: black
+.slick-dots
+    li.slick-active
+        button
+            &::before
+                opacity: 1
+                color: black
+.prev, .next
+    width: 40px 
+    height: 47px 
+    position: absolute
+    top: 34px
+    left: calc( 50% - 60px - 57px) 
+    transform: translateX(-50%)
+    z-index: 10
+    cursor: pointer
+.next
+    left: calc( 50% + 60px + 57px) 
