@@ -1,0 +1,55 @@
+.question
+    padding: 60px 0 80px 0
+    background: url('../img/bg/bg_plane.jpg') center (center/cover) no-repeat
+    &__wrapper
+        max-width: 900px
+        min-height: 300px
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__head
+        padding: 10px 0
+        min-height: 68px
+        width: 100%
+        background-color: #25333c
+        text-align: center
+    &__header
+        color: #ffffff
+        font-size: 19px
+        font-weight: 700
+        text-transform: uppercase
+    &__subheader
+        color: #ffffff
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+    &__form
+        padding: 20px 40px
+        min-height: 230px
+        background-color: rgba(255, 255, 255, 0.7)
+        display: grid
+        grid-template: 45px minmax(70px, auto) 60px / repeat(3, 268px)
+        gap: 10px 5px
+        input
+            border-radius: 30px
+            font-size: 13px
+            font-weight: 300
+            color: rgba(16,16,16,.7)
+            border: 1px solid rgba(0, 0, 0, 0.21)
+            padding: 17px 28px
+    #message
+        resize: none
+        border-radius: 10px
+        padding: 18px 25px
+        grid-column: 1 / 4
+        color: #616467
+        border: 1px solid rgba(0, 0, 0, 0.21)
+        font-size: 13px
+        font-weight: 300
+        wrap: off
+    &__btn
+        grid-column: 2 / 3
+        margin: 15px auto 0 auto
+        border: none

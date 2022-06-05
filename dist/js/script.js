@@ -56,9 +56,8 @@ $('.carousel_slider').slick({
       }
     ]
   });
-  document.querySelector(".prev").addEventListener("click", function () {
-    slider.goTo("prev");
-  });
-  document.querySelector(".next").addEventListener("click", function () {
-    slider.goTo("next");
-  });
+
+$('#message').on('input', function(){
+    this.style.height = '1px';
+    this.style.height = (this.scrollHeight + 6) + 'px'; 
+});
