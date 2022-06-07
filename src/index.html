@@ -46,11 +46,8 @@
 <body>
     <section class="promo">
         <div class="container">
-            <header class="header">
-                <!-- <a href="#" class="header__logo">
-                    <img src="icons/logo.png" alt="Glopt Logo">
-                </a> -->
-                <picture>
+            <header class="header" id="top">
+                <picture >
                     <source media="(max-width: 992px)" srcset="img/footer/foot_logo.png">
                     <source media="(min-width: 993px)" srcset="icons/logo.png">
                     <img src="icons/logo.png" alt="Glopt Logo">
@@ -58,22 +55,22 @@
                 <nav class="menu">
                     <ul class="menu__items">
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Преимущества</a>
+                            <a href="#benefits" class="menu__link">Преимущества</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Наша работа</a>
+                            <a href="#work" class="menu__link">Наша работа</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Цены</a>
+                            <a href="#price" class="menu__link">Цены</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Схема работы</a>
+                            <a href="#scheme" class="menu__link">Схема работы</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Отзывы</a>
+                            <a href="#reviews" class="menu__link">Отзывы</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Контакты</a>
+                            <a href="#contacts" class="menu__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -86,7 +83,7 @@
                         <div class="header__subquestion">Есть вопросы?</div>
                         <a href="tel:+79264230100" class="header__phone">+7 (926) 423 01 00</a>
                     </div>
-                    <a href="#" class="header__btn button">Перезвоните мне</a>
+                    <a href="#consultation" class="header__btn button">Перезвоните мне</a>
                 </div>
                 <div class="hamburger">
                     <span></span>
@@ -125,14 +122,14 @@
                         <div class="promo__descr">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг  </div>
                     </div>
                 </div>
-                <a href="#" class="button button_promo promo__btn">Получить расчет</a>
+                <a href="#question" class="button button_promo promo__btn">Получить расчет</a>
             </div>
         </div>
     </section>
 
-    <section class="benefits">
+    <section class="benefits" id="benefits" >
         <div class="container">
-            <h2 class="title">Преимущества работы с GlobalOpt</h2>
+            <h2 class="title" >Преимущества работы с GlobalOpt</h2>
             <div class="benefits__wrapper">
                 
                     <div class="benefits__item">
@@ -213,7 +210,7 @@
         </div>
     </section>
 
-    <section class="work">
+    <section class="work" id="work">
         <div class="container">
             <div class="title title_line work__title">
                 Наша работа - больше чем просто доставка
@@ -273,7 +270,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <div class="title title_line price__title">
                 Цены на любой вариант доставки
@@ -334,7 +331,7 @@
                 </div>
             </div>
             
-            <div class="consultation">
+            <div class="consultation" id="consultation">
                 <div class="consultation__header">
                     Заказать бесплатную консультацию
                 </div>
@@ -345,10 +342,16 @@
                             <img src="icons/price/woman.png" alt="Mini Man">
                         </div>
                     </div>
-                    <input required name="name" type="text" placeholder="Ваше имя...">
-                    <input required name="phone" type="number" placeholder="Ваш номер телефона...">
-                    <input required name="email" type="email" placeholder="Ваш e-mail...">
-
+                    <div class="consultation__item">
+                        <input name="name" type="text" placeholder="Ваше имя...">
+                    </div>
+                    <div class="consultation__item">
+                        <input name="phone" type="number" placeholder="Ваш номер телефона...">
+                    </div>
+                    <div class="consultation__item">
+                        <input name="email" type="email" placeholder="Ваш e-mail...">
+                    </div>
+                    
                     <button class="button button_consultation consultation__btn">Отправить заявку</button>
                 </form>
             </div>
@@ -370,7 +373,7 @@
         </div>
     </section>
 
-    <section class="scheme">
+    <section class="scheme" id="scheme">
         <div class="container">
             <div class="title">Схема работы с нами</div>
             <div class="scheme__wrapper">
@@ -444,7 +447,7 @@
         </div>
     </section>
 
-    <div class="carousel">
+    <div class="carousel" id="reviews">
         <div class="title title_line">отзывы наших клиентов</div>
         <div class="carousel__subtitle">
             Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова
@@ -498,7 +501,7 @@
         </div>
     </div>
 
-    <section class="question">
+    <section class="question" id="question">
         <div class="container">
             <div class="question__wrapper">
                 <div class="question__head">
@@ -524,33 +527,42 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.2022289657934!2d30.521930471638424!3d50.45007575448672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50ffa1b91f%3A0x42d5962fe7e791c!2z0JzQsNC50LTQsNC9INCd0LXQt9Cw0LvQtdC20L3QvtGB0YLRlg!5e0!3m2!1suk!2sro!4v1654459039303!5m2!1suk!2sro" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__head">
-                    <a href="" class="footer__link">
-                        <img src="img/footer/small_logo.png" alt="Small logo">
+                    <a href="#top" class="footer__link">
+                        <img src="img/footer/foot_logo.png" alt="Small logo">
                     </a>
                     <h3 class="footer__descr">Global Opt - Доставка грузов из Китая в Россию и СНГ</h3>
-                    <div class="header__question header__question_left">
-                        <div class="header__subquestion">Есть вопросы?</div>
-                        <a href="tel:+79264230100" class="header__phone">+7 (926) 423 01 00</a>
+                    <div class="footer__contacts">
+                        <div class="footer__question">
+                            <div class="footer__subquestion">Есть вопросы?</div>
+                            <a href="tel:+79264230100" class="footer__phone">+7 (926) 423 01 00</a>
+                        </div>
+                        <a href="#consultation"" class="footer__btn button">Перезвоните мне</a>
                     </div>
-                    <a href="#" class="header__btn button">Перезвоните мне</a>
                 </div>
                 <div class="footer__line"></div>
                 <div class="footer__subhead">
                     <div class="footer__create">
-                        © 2010 bsemeniuk.com
+                        <a href="https://bsemeniuk.com/" target="_blank">© 2022 bsemeniuk.com</a>
                     </div>
-                    <div class="footer__policy"></div>
+                    <div class="footer__policy">
+                        <a href="policy.html" target="_blank">Политика конфидециальности</a>
+                    </div>
                     <div class="footer__my">
-                        Створення сайту <a href="https://bsemeniuk.com/" target="_blank">Богдан Семенюк</a>
+                        Створення сайту B.S. 
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Page UP -->
+    <a href="#top" class="pageup">
+    <img src="icons/chev.svg" alt="pageup">
+    </a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
