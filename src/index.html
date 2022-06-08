@@ -346,7 +346,7 @@
                         <input name="name" type="text" placeholder="Ваше имя...">
                     </div>
                     <div class="consultation__item">
-                        <input name="phone" type="number" placeholder="Ваш номер телефона...">
+                        <input name="phone" placeholder="Ваш номер телефона...">
                     </div>
                     <div class="consultation__item">
                         <input name="email" type="email" placeholder="Ваш e-mail...">
@@ -513,10 +513,16 @@
                     </div>
                 </div>
                 <form action="#" class="question__form">
-                    <input required name="name" type="text" placeholder="Ваше имя...">
-                    <input required name="phone" type="number" placeholder="Ваш номер телефона...">
-                    <input required name="email" type="email" placeholder="Ваш e-mail...">
-                    <textarea name="message" id="message" type="text" placeholder="Сообщение..."></textarea>
+                    <div class="question__item">
+                        <input name="name" type="text" placeholder="Ваше имя...">
+                    </div>
+                    <div class="question__item" >
+                        <input id="phone" name="phone" placeholder="Ваш номер телефона...">
+                    </div>
+                    <div class="question__item">
+                        <input name="email" type="email" placeholder="Ваш e-mail...">
+                    </div>
+                    <textarea name="text" id="message" type="text" placeholder="Сообщение..."></textarea>
                     <button class="button button_consultation question__btn">Отправить заявку</button>
                 </form>
             </div>
