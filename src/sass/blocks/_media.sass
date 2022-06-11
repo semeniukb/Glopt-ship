@@ -5,6 +5,17 @@
         &__blocks
             flex-direction: column
             row-gap: 15px
+    .promo
+        &__blocks
+            flex-wrap: wrap
+            row-gap: 20px
+            padding: 0 60px
+    .benefits
+        &__wrapper
+            grid-template-columns: repeat(auto-fit, 460px)
+    .price
+        &__wrapper
+            row-gap: 25px
 
         
     
@@ -14,25 +25,93 @@
     .header
         &__question
             display: none
-    .button
-        width: 130px
+        &__btn
+            width: 130px
+            font-size: 11px
+            padding: 12px 0 11px 0 
     .menu
         &__items
             column-gap: 13px
         &__item
             font-size: 14px
             &::after
-                right: -6.5px
-    .button 
-        font-size: 11px
-        padding: 12px 0 11px 0 
+                right: -6.5px 
+    
+    .promo
+        &__wrapper
+            margin-top: 20px
+        &__header
+            font-size: 65px
+        &__subtitle
+            font-size: 30px
+        &__elements
+            &::after, &::before
+                width: 45vw
+    .benefits
+        &__wrapper
+            grid-template-columns: repeat(auto-fit, 345px)
+    .work
+        padding-top: 35px
+        &__subtitle
+            padding: 0
+            line-height: 25px
+        &__wrapper
+            column-gap: 15px
 
+    .agent
+        &__text
+            padding: 0
+
+    .price
+        padding-top: 35px
+        &__subtitle
+            padding: 0
+    .consultation
+        &__form
+            flex-direction: column
+            align-items: center
+            row-gap: 20px
+            input
+                width: 300px
+    
+    .manager
+        &__text
+            padding: 0
+    
+    .scheme
+        padding-top: 35px
+        &__item
+            width: 220px
+
+    .carousel
+        padding-top: 35px
+        &__subtitle
+            padding: 0
+
+    .question
+        &__form
+            grid-template: 45px minmax(70px,auto) 55px/repeat(3,1fr)
+        &__item
+            input
+                width: 210px
+
+    .maps
+        iframe
+            height: 400px
+    
+    .footer
+        &__descr
+            display: none
 
 @media (max-width: 767.998px)
     .container
         max-width: 540px
     .header
-        padding: 40px 30px 0 0
+        padding: 40px 0 0 0
+        &__btn
+            width: 150px
+            font-size: 12px
+            padding: 12px 0 11px 0 
         &__question_left
             order: 1
             display: flex
@@ -62,8 +141,8 @@
                     &:nth-child(3)
                         transform: translateY(-10px) rotate(45deg)
     .menu
-        position: absolute
-        width: 50vw
+        position: fixed
+        width: 60vw
         height: 100vh
         top: 0
         left: -100%
@@ -81,9 +160,163 @@
             font-size: 20px
             &::after
                 display: none
+    .promo
+        &__title
+            font-size: 20px
+        &__header
+            margin-top: 15px
+            font-size: 55px
+        &__subtitle
+            margin-top: 10px
+            font-size: 23px
+        &__blocks
+            column-gap: 15px
+            padding: 0
+        &__btn
+            width: 210px
+
+    .benefits
+        &__wrapper
+            grid-template-columns: 1fr
+        &__text
+            text-align: justify
+    .work
+        &__wrapper
+            margin-top: 20px
+            flex-wrap: wrap
+        &__item
+            margin-top: 25px
+            width: 100%
+        &__image
+            margin: 0 auto
+            width: 360px
+            height: 210px
+            img
+                max-width: 100%
+        &__header
+            font-size: 19px
+        &__descr
+            font-size: 15px
+    .price
+        &__wrapper
+            column-gap: 9px
+
+    .scheme
+        &__item
+            width: 240px
+
+    .question
+        &__form
+            grid-template: 45px 45px 45px minmax(70px,auto) 55px / 460px
+            row-gap: 21px
+        &__item
+            width: 100%
+            input
+                width: 100%
+        #message
+            grid-column: auto / auto
+        &__btn
+            grid-column: auto / auto
+    
+    .maps
+        iframe
+            height: 350px
 
 @media (max-width: 574.998px)
     .container
         width: 100%
         padding: 0 15px
+    .header
+        flex-direction: column
+        // row-gap: 20px
+        &__question_left
+            margin-top: 30px
+            order: 2
+        &__subquestion
+            font-size: 16px
+        &__phone
+            font-size: 18px
+        &__blocks
+            margin-top: 15px
+            order: 3
+        &__subquestion
+            text-align: center
+        picture
+            order: 1
+        &__btn
+            font-size: 13px
+            width: 160px
+    .menu
+        width: 80vw
+    
+    .promo
+        &__title
+            display: none
+        &__header
+            margin-top: 25px
+            font-size: 35px
+        &__subtitle
+            font-size: 20px
 
+    .benefits
+        &__item
+            flex-direction: column
+        &__image
+            width: 100%
+            justify-content: center
+        &__text
+            text-align: center
+    
+    .work
+        &__text
+            margin-top: 15px
+        &__image
+            text-align: center
+            width: unset
+            height: unset
+            img
+                width: unset
+                height: unset
+    
+    .consultation
+        &__form
+            padding: 70px 20px 55px 20px
+            input
+                width: 100%
+        &__item
+            width: 100%
+
+    .scheme
+        &__item
+            width: 100%
+        
+    .question
+        &__form
+            padding: 25px 15px 20px 15px
+            grid-template: 45px 45px 45px minmax(70px,auto) 55px / 1fr
+            width: 100%
+        label.error
+            left: 0
+            top: -63px
+            text-align: center
+    
+    .pageup
+        right: -100px
+
+    .footer
+        padding-bottom: 20px
+        &__contacts
+            flex-direction: column
+            align-items: end
+            row-gap: 20px
+        &__phone
+            font-size: 17px
+        &__btn
+            padding: 11px 0
+        &__subhead
+            flex-direction: column
+            row-gap: 5px
+        &__create
+            order: 3
+        &__my
+            margin-top: 15px
