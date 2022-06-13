@@ -16,17 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// let slider = tns({
-//     container: '.carousel_slider',
-//     items: 2,
-//     autoplay: false,
-//     loop: true,
-//     gutter: 45,
-//     mouseDrag: true,
-//     fixedWidth: 400,
-//     center: true,
-//     animateIn: 'class'
-//   });
 $('.carousel_slider').slick({
     centerMode: true,
     centerPadding: '0px',
